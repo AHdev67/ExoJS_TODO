@@ -1,0 +1,33 @@
+#todo{
+    margin: 5px;
+}
+
+#btn{
+    width: 50%;
+    margin: 5px;
+}
+
+#todoCards{
+    display: flex;
+    flex-wrap: wrap;
+   ;
+}
+
+.todoCard{
+     position: relative;
+    margin: 5px
+}
+
+.task{
+    display: inline-block;
+    resize: none;
+    height: 250px;
+    width: auto;
+}
+
+.delBtn{
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 230px;
+    cursor: pointer;
+}
