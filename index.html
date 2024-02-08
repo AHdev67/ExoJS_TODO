@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b28c0a82b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>TODO LIST</title>
+</head>
+<body>
+    <h1>Todo list</h1>
+    
+    <div id="todo">
+
+        <button id="btn">Add a task</button>
+
+        <div id="todoCards">
+            <div class="todoCard">
+                <textarea class="task" maxlength="200" cols="20" rows="15">New task</textarea>
+                <span class="delBtn"><i class="fa-solid fa-trash-can"></i></span>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        const card = document.querySelector(".todoCard");
+        const cardContainer = document.querySelector("#todoCards")
+        
+        const addBtn = document.querySelector("#btn");
+        addBtn.addEventListener("click", function(){
+            let newCard = card.cloneNode(true);
+            todoCards.appendChild(newCard);
+            
+            let newDeleteBtn = document.querySelector(".delBtn");
+            newDeleteBtn.addEventListener("click", function(){
+                newCard.remove();
+            })
+        })
+
+        const deleteBtn = document.querySelector(".delBtn");
+        deleteBtn.addEventListener("click", function(){
+            card.remove();
+        })
+
+    </script>
+</body>
+</html>
