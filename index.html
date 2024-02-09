@@ -21,27 +21,6 @@
             </div>
         </div>
     </div>
-    <script>
-
-        const card = document.querySelector(".todoCard");
-        const cardContainer = document.querySelector("#todoCards")
-        
-        const addBtn = document.querySelector("#btn");
-        addBtn.addEventListener("click", function(){
-            let newCard = card.cloneNode(true);
-            todoCards.appendChild(newCard);
-            
-            let newDeleteBtn = document.querySelector(".delBtn");
-            newDeleteBtn.addEventListener("click", function(){
-                newCard.remove();
-            })
-        })
-
-        const deleteBtn = document.querySelector(".delBtn");
-        deleteBtn.addEventListener("click", function(){
-            card.remove();
-        })
-
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
